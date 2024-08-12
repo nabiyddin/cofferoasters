@@ -1,0 +1,360 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-ink-color: #333d4b;
+  --dark-green-color: #0e8784;
+  --gray-color: #83888f;
+  --light-gray-color: #fefcf7;
+  --light-orange-color: #fdd6ba;
+  --barlow-font: "Barlow", sans-serif;
+  --fraunces-font: "Fraunces 9pt", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Start of header styling */
+#header {
+  padding: 43px 80px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#navbar ul a {
+  color: var(--gray-color);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+/* End of header styling */
+
+/* Start of create styling */
+.create-wrapper {
+  background: url("/images/create-img.png");
+  background-size: cover;
+  border-radius: 10px;
+  height: 450px;
+  color: var(--light-gray-color);
+}
+.create-texts-wrapper {
+  padding-top: 134px;
+  padding-left: 85px;
+}
+
+.create-texts-wrapper h1 {
+  font-size: 72px;
+  left: 72px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.create-texts-wrapper p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 80%;
+}
+/* End of create styling */
+
+/* Start of enjoy styling */
+#enjoy {
+  padding: 177px 80px 0 80px;
+  position: relative;
+}
+
+.enjoy-content {
+  padding: 189px 150px 109px 85px;
+  background: #2c343e;
+  border-radius: 10px;
+}
+
+.enjoy-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 95px;
+}
+
+.enjoy-card {
+  width: 285px;
+  height: 355px;
+}
+
+.enjoy-card h1 {
+  color: var(--light-orange-color);
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.enjoy-card h3 {
+  margin-top: 38px;
+  margin-bottom: 42px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  color: var(--light-gray-color);
+  font-family: var(--fraunces-font);
+}
+
+.enjoy-card p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--light-gray-color);
+}
+
+.enjoy-line {
+  width: 760px;
+  height: 1px;
+  border-radius: 2px;
+  background: var(--light-orange-color);
+  position: absolute;
+  top: 283.5px;
+  left: 180.5px;
+}
+
+.wrapper-rings {
+  display: flex;
+  gap: 349px;
+  align-items: center;
+  position: absolute;
+  top: 268px;
+  left: 165px;
+}
+
+.ring {
+  width: 31px;
+  height: 31px;
+  border: 2px solid var(--dark-green-color);
+  border-radius: 50%;
+  /* background: var(--light-gray-color); */
+}
+/* End of enjoy styling */
+
+/* Start of drink styling */
+#drink {
+  padding: 159px 165px 168px 545px;
+  position: relative;
+}
+
+.drink-texts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drink-texts-wrapper h1 {
+  color: var(--gray-color);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.drink-contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
+.drink-cards-wrapper {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.drink-card {
+  padding: 32px 28px 84px 28px;
+  color: var(--dark-ink-color);
+  background: #f4f1eb;
+  border-radius: 10px;
+}
+
+.drink-card h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.drink-card p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.filter {
+  color: var(--light-gray-color);
+  background: var(--dark-green-color);
+}
+
+.filter h3 {
+  color: var(--white-color);
+}
+
+.drink-bottom-content {
+  margin-top: 84px;
+  padding: 27px 64px;
+  background: #2c343e;
+}
+
+.drink-bottom-content h3 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--white-color);
+  opacity: 50.37%;
+  text-transform: uppercase;
+  font-family: var(--barlow-font);
+}
+
+.drink-bottom-content p {
+  color: var(--white-color);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.drink-bottom-content span {
+  color: var(--dark-green-color);
+}
+
+.drink-btn {
+  margin-top: 40px;
+  margin-left: 500px;
+  padding: 15px 31px;
+  color: var(--light-gray-color);
+  background: var(--dark-green-color);
+  border: none;
+  border-radius: 5px;
+  font-family: var(--fraunces-font);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.drink-btn:hover {
+  background: var(--dark-ink-color);
+}
+
+.navbar-left-wrapper {
+  position: fixed;
+  top: 30%;
+  left: 165px;
+}
+
+.navbar-left-list {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  height: 356px;
+}
+
+.navbar-left-list h2 {
+  color: var(--gray-color);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+  opacity: 40%;
+}
+
+.navbar-left-list span {
+  margin-right: 25px;
+}
+.first {
+  color: var(--dark-green-color) !important;
+}
+
+.navbar-left-list span:last-child {
+  color: var(--gray-color);
+}
+
+.drink-line {
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gray-color);
+  opacity: 25%;
+}
+
+.navbar-left-list h2:last-child {
+  opacity: 1;
+  color: var(--dark-ink-color);
+}
+
+/* End of drink styling */
+
+/* Start of footer styling */
+#footer {
+  padding: 0 80px 88px 80px;
+}
+
+.footer-texts-wrapper {
+  padding: 47px 85px;
+  background: #2c343e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-texts-wrapper img {
+  width: 236px;
+  height: 26px;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.footer-list-item li a {
+  color: var(--gray-color);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 0.92px;
+}
+
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/* End of footer styling */

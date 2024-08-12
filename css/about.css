@@ -1,0 +1,243 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-ink-color: #333d4b;
+  --dark-green-color: #0e8784;
+  --gray-color: #83888f;
+  --light-gray-color: #fefcf7;
+  --light-orange-color: #fdd6ba;
+  --barlow-font: "Barlow", sans-serif;
+  --fraunces-font: "Fraunces 9pt", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Start of header styling */
+#header {
+  padding: 43px 80px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#navbar ul a {
+  color: var(--gray-color);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+/* End of header styling */
+
+/* Start of about styling */
+.about-wrapper {
+  background: url("/images/about-img.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  height: 450px;
+  color: var(--light-gray-color);
+}
+.about-texts-wrapper {
+  padding-top: 137px;
+  padding-left: 85px;
+}
+
+.about-texts-wrapper h1 {
+  font-size: 40px;
+  left: 48px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.about-texts-wrapper p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* End of about styling */
+
+/* Start of commitment styling */
+#commitment {
+  padding: 168px 165px 0 165px;
+}
+
+.commitment-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commitment-texts-wrapper {
+  width: 540px;
+  height: 340px;
+  color: var(--dark-ink-color);
+}
+
+.commitment-texts-wrapper h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.commitment-texts-wrapper p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* End of commitment styling */
+
+/* Start of quality styling */
+#quality {
+  padding: 256px 80px 0 80px;
+  position: relative;
+}
+
+.quality-wrapper {
+  width: 100%;
+  height: 474px;
+  border-radius: 10px;
+  color: var(--light-gray-color);
+  background: #2c343e;
+  padding-top: 88px;
+  padding-left: 85px;
+}
+
+.quality-wrapper img {
+  position: absolute;
+  top: 168px;
+  right: 165px;
+  border-radius: 10px;
+}
+
+.quality-texts-wrapper {
+  width: 540px;
+  height: 210px;
+}
+
+.quality-texts-wrapper h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.quality-texts-wrapper p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 80%;
+}
+/* End of quality styling */
+
+/* Start of headquarters styling */
+#headquarters {
+  padding: 168px 200px;
+}
+
+#headquarters h1 {
+  color: var(--gray-color);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.headquarters-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 95px;
+  margin-top: 72px;
+  color: var(--dark-ink-color);
+}
+
+.headquarters-card {
+  width: 285px;
+  height: 267px;
+}
+
+.headquarters-card h2 {
+  margin-top: 46px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  font-family: var(--fraunces-font);
+}
+
+.headquarters-card p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: var(--barlow-font);
+}
+/* End of headquarters styling */
+
+/* Start of footer styling */
+#footer {
+  padding: 0 80px 88px 80px;
+}
+
+.footer-texts-wrapper {
+  padding: 47px 85px;
+  background: #2c343e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-texts-wrapper img {
+  width: 236px;
+  height: 26px;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.footer-list-item li a {
+  color: var(--gray-color);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 0.92px;
+}
+
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/* End of footer styling */
